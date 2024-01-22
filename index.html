@@ -19,6 +19,7 @@
           extend: {
             colors: {
               clifford: "#da373d",
+              black: "#131318",
             },
           },
         },
@@ -44,33 +45,35 @@
   </head>
   <body>
     <header></header>
-    <main class="container my-6 lg:my-24 max-w-[90%] h-[200px] lg:h-auto lg:max-w-[80%] mx-auto ">
+    <main class="container max-w-[90%] lg:max-w-[80%] mx-auto">
       <!-- Carousel -->
-      <section>
+      <section class="my-6 lg:my-24 h-[200px] lg:h-auto">
         <div class="carousel w-full rounded-xl">
           <div id="slide1" class="carousel-item relative w-full">
-            <img
-              src="Images/1.png"
-              class="w-full  h-[200px] lg:h-auto"
-            />
-            
+            <img src="Images/1.png" class="w-full h-[200px] lg:h-auto" />
+
             <div
               class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
             >
-              <a href="#slide4" class="btn btn-circle bg-[#131318] text-white">❮</a>
-              <a href="#slide2" class="btn btn-circle bg-[#131318] text-white">❯</a>
+              <a href="#slide4" class="btn btn-circle bg-[#131318] text-white"
+                >❮</a
+              >
+              <a href="#slide2" class="btn btn-circle bg-[#131318] text-white"
+                >❯</a
+              >
             </div>
           </div>
           <div id="slide2" class="carousel-item relative w-full">
-            <img
-              src="Images/car2.jpg"
-              class="w-full h-[200px] lg:h-auto"
-            />
+            <img src="Images/car2.jpg" class="w-full h-[200px] lg:h-auto" />
             <div
               class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
             >
-              <a href="#slide1" class="btn btn-circle bg-[#131318] text-white">❮</a>
-              <a href="#slide3" class="btn btn-circle bg-[#131318] text-white">❯</a>
+              <a href="#slide1" class="btn btn-circle bg-[#131318] text-white"
+                >❮</a
+              >
+              <a href="#slide3" class="btn btn-circle bg-[#131318] text-white"
+                >❯</a
+              >
             </div>
           </div>
           <div id="slide3" class="carousel-item relative w-full">
@@ -81,8 +84,12 @@
             <div
               class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
             >
-              <a href="#slide2" class="btn btn-circle bg-[#131318] text-white">❮</a>
-              <a href="#slide4" class="btn btn-circle bg-[#131318] text-white">❯</a>
+              <a href="#slide2" class="btn btn-circle bg-[#131318] text-white"
+                >❮</a
+              >
+              <a href="#slide4" class="btn btn-circle bg-[#131318] text-white"
+                >❯</a
+              >
             </div>
           </div>
           <div id="slide4" class="carousel-item relative w-full">
@@ -93,14 +100,100 @@
             <div
               class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
             >
-              <a href="#slide3" class="btn btn-circle bg-[#131318] text-white">❮</a>
-              <a href="#slide1" class="btn btn-circle bg-[#131318] text-white">❯</a>
+              <a href="#slide3" class="btn btn-circle bg-[#131318] text-white"
+                >❮</a
+              >
+              <a href="#slide1" class="btn btn-circle bg-[#131318] text-white"
+                >❯</a
+              >
             </div>
           </div>
         </div>
       </section>
 
+      <section class="my-12 lg:my-24 flex flex-col items-center text-center">
+        <h1 class="text-lg lg:text-4xl font-extrabold text-black">
+          Dhaka Hockeys Club
+        </h1>
+        <p
+          class="text-black opacity-60 mt-4 mb-8 lg:mt-6 lg:mb-8 w-5/6 lg:w-3/4 text-sm lg:text-base"
+        >
+          At Dhaka Hockeys Club, we take pride in our rich history and
+          commitment to excellence in the world of professional hockey.
+          Established in 2001, our club has become a symbol of sportsmanship,
+          dedication, and the thrill of the game.
+        </p>
 
+        <div class="container mx-auto flex flex-col lg:flex-row">
+          <!-- Progress Card1 -->
+          <div class="card w-full">
+            <div class="card-body items-center text-center">
+              <div
+                class="radial-progress text-[#ff4240]"
+                style="--value: 70"
+                role="progressbar"
+              >
+                70%
+              </div>
+              <h2 class="font-semibold text-black text-lg lg:text-xl">
+                Prayer Facility
+              </h2>
+              <p class="text-black opacity-60">Quiet Retreat Amidst Chaos & Serene Haven for Reflection</p>
+            </div>
+          </div>
+
+           <!-- Progress Card2 -->
+          <div class="card w-full">
+            <div class="card-body items-center text-center">
+              <div
+                class="radial-progress text-[#49d293]"
+                style="--value: 70"
+                role="progressbar"
+              >
+                70%
+              </div>
+              <h2 class="font-semibold text-black text-lg lg:text-xl">
+                Experienced Coach
+              </h2>
+              <p class="text-black opacity-60">Leadership Through Proven Expertise</p>
+            </div>
+          </div>
+
+           <!-- Progress Card3 -->
+          <div class="card w-full">
+            <div class="card-body items-center text-center">
+              <div
+                class="radial-progress text-[#ffb546]"
+                style="--value: 70"
+                role="progressbar"
+              >
+                70%
+              </div>
+              <h2 class="font-semibold text-black text-lg lg:text-xl">
+                Senior Player
+              </h2>
+              <p class="text-black opacity-60">Mentoring Younger Teammates with Veteran Presence on Field</p>
+            </div>
+          </div>
+
+           <!-- Progress Card4 -->
+          <div class="card w-full">
+            <div class="card-body items-center text-center">
+              <div
+                class="radial-progress text-[#4c8df1]"
+                style="--value: 70"
+                role="progressbar"
+              >
+                70%
+              </div>
+              <h2 class="font-semibold text-black text-lg lg:text-xl">
+                Training Ground
+              </h2>
+              <p class="text-black opacity-60">Cutting-edge Athlete Development Venue</p>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <footer></footer>
   </body>
